@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char font[] = "DejaVu Sans Mono For Powerline:pixelsize=24:antialias=true:autohint=false";
 static int borderpx = 2;
 static char shell[] = "/bin/sh";
 static char *utmp = NULL;
