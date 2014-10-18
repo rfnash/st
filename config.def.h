@@ -56,28 +56,30 @@ static unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#073642",
-	"#dc322f",
-	"#859900",
-	"#b58900",
-	"#268bd2",
-	"#d33682",
-	"#2aa198",
-	"#eee8d5",
+	"#3f3f3f",			// #1E2320
+	"#705050",
+	"#60b48a",
+	"#dfaf8f",
+	"#506070",
+	"#dc8cc3",
+	"#8cd0d3",
+	"#dcdccc",
 
 	/* 8 bright colors */
-	"#002b36",
-	"#cb4b16",
-	"#586e75",
-	"#657b83",
-	"#839496",
-	"#6c71c4",
-	"#93a1a1",
-	"#fdf6e3",
+	"#709080",
+	"#dca3a3",
+	"#c3bf9f",
+	"#f0dfaf",
+	"#94bff3",
+	"#ec93d3",
+	"#93e0e3",
+	"#ffffff",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
+	"#dcdccc",
+	"#3f3f3f",
 	"#cccccc",
 };
 
@@ -86,9 +88,9 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-static unsigned int defaultfg = 12;
-static unsigned int defaultbg = 8;
-static unsigned int defaultcs = 14;
+static unsigned int defaultfg = 256;
+static unsigned int defaultbg = 257;
+static unsigned int defaultcs = 258;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
